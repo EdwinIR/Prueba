@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="demoApp">
+<head>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>-->
+<script src="angular.min.js"></script>
+<script src="angularDemo.js"></script>
+</head>
+
+<body >
+<div ng-controller="demoCtrl">
+
+<select ng-model="numero" ng-change ="habilitados(numero)">
+	<option>A</option>
+	<option>B</option>
+	<option>C</option>
+</select>
+
+  Seleccionado    {{numero}}
+
+</div>      
+</body>
+</html>
